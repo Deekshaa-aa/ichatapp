@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iChat - realtime Node Socket.io Chat App</title>
+    <!-- included js file to connect client and server -->
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>      <!-- defer is written so that this script can access the elements in .html after this import of script , warna script ko last mei add krna pade-->
+    <script defer src="client.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <img class="logo" src="chat.png" alt="chat.app">
+        <h1>Welcome to iChat App</h1>
+    </nav>
+    <div class="container">
+        <!-- <div class="message right">You: Hey how are you?</div>
+        <div class="message left">Friend: I am good, how about you?</div> -->
+    </div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" id="messageInp">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+
+</html>
